@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>SignUp</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>	
+<script>
+function password(){
+var d=document.myform.d1.value;
+if(d=="")
+ {
+alert("please insert your name");
+ }
+else
+{
+alert("Username verified");
+}
+var e=document.myform.e1.vale;
+if(d=="")
+{
+alert("please insert your name");
+ }
+else
+{
+alert("Username verified");
+}
+var a=document.myform.a1.value;
+var b=document.myform.b1.value;
+if(a==b)
+{
+alert("password match");
+}
+else
+{
+alert("password not match");
+}
+var c=document.myform.c1.value.length;
+if(c==10)
+{
+alert("Mobile no. matched");
+}
+else
+{
+alert("Incoorect no.")
+}
+}
+
+</script>
+<form name="myform">
+ 
+<div id="conatiner">
+	<div id ="header">
+	 		<div id=""><b><div align="left"><font size="30" color="lightgrey">SignUp</font></div></b>
+	 			
+	 		</div>
+		</div>
+	<div id="nav_area">
+	 			<ul>
+	 				<li><a href="index.html">Lagercollection</li></a>
+	 				<li><a href="feedback.htm">Feedback</li></a>
+	 				
+	 				<li><a href="aboutus.html">About Us</li></a>
+	 				<li><a href="contacus.html">Contact Us</li></a>
+					<li><a href="login.html">Log In</a></li>
+					<li><a href="">SignUp</a></li>
+	 			</ul>
+	</div>
+	<fieldset>
+<div align="center"><font size="20">create your Shopping Mania account</font></div><br><hr>
+<div align="left"> 
+&nbsp;&nbsp;Name<br>
+&nbsp;&nbsp;<input type="text" value="" name="d1" placeholder="First">
+&nbsp;<input type="text" value="" name="e1" placeholder="Last">
+<br><br>
+&nbsp;&nbsp;Choose your Username
+<br>
+&nbsp;&nbsp;<input type="text" value="" name="t1" placeholder="@gmail.com">
+<br><br>
+&nbsp;&nbsp;Create a password<br>		
+&nbsp;&nbsp;<input type="password" value="" name="a1">
+<br><br>
+&nbsp;&nbsp;Confirm ur password<br>
+&nbsp;&nbsp;<input type="password" value="" name="b1">
+<br><br>
+&nbsp;&nbsp;Birthday
+<br>&nbsp;
+ <select>
+  <option>Month</option>
+  <option>January</option>
+  <option>Feburary</option>
+  <option>March</option>
+  <option>April</option>
+  <option>May</option>
+  <option>june</option>
+  <option>July</option>
+  <option>August</option>
+  <option>September</option>
+  <option>October</option>
+  <option>November</option>
+  <option>December</option>
+ </select>
+ <select>
+  <option>Day</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+  <option>31</option>
+ </select>
+  <select>
+  <option>Year</option>
+  <option>2016</option>
+  <option>2015</option>
+  <option>2014</option>
+  <option>2013</option>
+  <option>2013</option>
+  <option>2012</option>
+  <option>2011</option>
+  <option>2010</option>
+  <option>2009</option>
+  <option>2008</option>
+  <option>2007</option>
+  <option>2006</option>
+  <option>2005</option>
+  <option>2004</option>
+  <option>2003</option>
+  <option>2002</option>
+  <option>2001</option>
+  <option>2000</option>
+  <option>1999</option>
+  <option>1999</option>
+  <option>1998</option>
+  <option>1997</option>
+  <option>1996</option>
+  <option>1995</option>
+  <option>1994</option>
+  <option>1993</option>
+  <option>1992</option>
+  <option>1991</option>
+  <option>1990</option>
+  <option>1989</option>
+  <option>1987</option>
+  <option>1986</option>
+  <option>1985</option>
+  <option>1984</option>
+  <option>1983</option>
+  <option>1982</option>
+  <option>1981</option>
+  <option>1980</option>
+  <option>1979</option>
+  <option>1978</option>
+  <option>1977</option>
+  <option>1976</option>
+  <option>1975</option>
+  <option>1974</option>
+  <option>1973</option>
+  <option>1972</option>
+  <option>1971</option>
+  <option>1970</option>
+	</select>
+<br><br>
+&nbsp;&nbsp;Gender
+<select placeholder="I am...">
+<option>Male</option>
+<option>Female</optio>
+<option>Other</option> 
+</select>
+<br><br>
+&nbsp;&nbsp;Mobile phone<br>
+&nbsp;&nbsp;<input type="text" value="" name="c1"><br><br>
+&nbsp;&nbsp;<input type="Checkbox" name=""> I agree to the google terms of service and privacy policy <br><br>
+
+&nbsp;&nbsp;<input type="button" onclick="password()" onclick="password()" value="Submit">
+&nbsp;&nbsp;<input type="reset"  value="Reset">
+</p><br>
+</script>
+</form>
+
+</fieldset>
+ 	<div id="footer_area">
+	
+	<ul>
+		<li><a href="index.html#">Lagercollection</li></a>
+		<li><a href="feedback.htm">Feedback</li></a>
+		
+		<li><a href="aboutus.html">About Us</li></a>
+		<li><a href="contacus.html">Contact Us</li></a>
+	</ul>
+ 	<p>  Copyright &copy; 2016 </br>goyal001akshay@gmail.com</p>
+	</div>
+</div>
+</body>
+</html>
