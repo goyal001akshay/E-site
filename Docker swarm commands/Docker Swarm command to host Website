@@ -32,7 +32,7 @@ sudo su -
 
 FROM centos
   RUN yum install httpd -y
-  CMD["/usr/sbin/apachectl","-D","FOREGROUND"]
+  CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 
 
 
