@@ -15,17 +15,16 @@ sudo su -
 08. mv /var/www/html/Ecommerce-site-project/* /var/www/html
 09. hostname -I
 10. curl 172.31.30.172
-11. vi dockerfileConnection reset by 18.219.94.159
-12. vi dockerfile
-13. docker build -t myapache:t1 .
-14. service httpd stop
-15. docker run -d -v /var/www/html:/var/www/html  -p 80:80 --name  web myapache:t1
-16. service httpd restart
-17. curl 172.31.30.172
-18. docker swarm init --advertise-addr 172.30.31.172
-19. docker node ls
-20. docker service create --name MyWeb-mount --mount type=bind,source=/var/www/html,target=/var/www/html  --publish published=80,target=80 --replicas 2 myapache:t1
-21. curl localhost:80
+11. vi dockerfile
+12. docker build -t myapache:t1 .
+13. service httpd stop
+14. docker run -d -v /var/www/html:/var/www/html  -p 80:80 --name  web myapache:t1
+15. service httpd restart
+16. curl 172.31.30.172
+17. docker swarm init --advertise-addr 172.30.31.172
+18. docker node ls
+19. docker service create --name MyWeb-mount --mount type=bind,source=/var/www/html,target=/var/www/html  --publish published=80,target=80 --replicas 2 myapache:t1
+20. curl localhost:80
 
 
 /* Editting docker file using command :- vi dockerfile */
