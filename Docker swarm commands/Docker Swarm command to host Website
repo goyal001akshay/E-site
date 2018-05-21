@@ -1,1 +1,38 @@
 
+Command to Host our Website using Docker Swarm
+
+01. cd c:
+02. cd Users/Akshay\ Goyal/Downloads/
+ssh -i "myweb.pem" ec2-user@ec2-18-219-94-159.us-east-2.compute.amazonaws.com
+sudo su -
+01. yum install docker -y
+02. yum install httpd -y
+03. service docker start
+04. service httpd start
+05. cd /var/www/html
+06. wget https://raw.githubusercontent.com/goyal001akshay/Ecommerce-site-project/master/Website.zip
+07. unzip Website.zip
+08. mv /var/www/html/eBay\ template/* /var/www/html
+09. hostname -I
+10. curl 172.31.30.172
+11. vi dockerfileConnection reset by 18.219.94.159
+12. vi dockerfile
+13. docker build -t myapache:t1 .
+14. service httpd stop
+15. docker run -d -v /var/www/html:/var/www/html  -p 80:80 --name  web myapache:t1
+16. service httpd restart
+17. curl 172.31.30.172
+18. docker swarm init --advertise-addr 172.30.31.172
+19. docker node ls
+20. docker service create --name MyWeb-mount --mount type=bind,source=/var/www/html,target=/var/www/html  --publish published=80,target=80 --replicas 2 myapache:t1
+21. curl localhost:80
+
+
+/* Editting docker file using command :- vi dockerfile */
+
+FROM centos
+  RUN yum install httpd -y
+  CMD["/usr/sbin/apachectl","-D","FOREGROUND"]
+
+
+
