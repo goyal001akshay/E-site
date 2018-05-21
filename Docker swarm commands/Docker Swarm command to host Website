@@ -10,9 +10,9 @@ sudo su -
 03. service docker start
 04. service httpd start
 05. cd /var/www/html
-06. wget https://raw.githubusercontent.com/goyal001akshay/Ecommerce-site-project/master/Website.zip
-07. unzip Website.zip
-08. mv /var/www/html/eBay\ template/* /var/www/html
+06. wget https://codeload.github.com/goyal001akshay/Ecommerce-site-project/zip/master
+07. unzip Ecommerce-site-project.zip
+08. mv /var/www/html/Ecommerce-site-project/* /var/www/html
 09. hostname -I
 10. curl 172.31.30.172
 11. vi dockerfileConnection reset by 18.219.94.159
